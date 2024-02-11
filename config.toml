@@ -1,0 +1,57 @@
+baseURL = "https://music.pgersl.xyz/"
+languageCode = "en-us"
+title = "Petr Geršl - Music"
+uglyURLs = "false"
+enableEmoji = "true"
+buildFuture = "true"
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = "true"
+[params]
+    description = "The official website of Petr Geršl dedicated to his music"
+[outputs]
+    home = ['HTML', 'JSON', 'RSS']
+    page = ['HTML']
+[frontmatter]
+    date = ['date', 'publishDate', 'lastmod']
+    expiryDate = ['expiryDate']
+    lastmod = [':git', 'lastmod', 'date', 'publishDate']
+    publishDate = ['publishDate', 'date']
+[menus]
+    [[menus.main]]
+        name = "About"
+        url = "/about"
+        weight = "1"
+    [[menus.main]]
+        name = "Works"
+        url = "/works"
+        weight = "2"
+    [[menus.main]]
+        name = "Discography"
+        url = "/discography"
+        weight = "3"
+    [[menus.main]]
+        name = "Support"
+        url = "/support"
+        weight = "4"
+    [[menus.works]]
+        name = "Orchestral"
+        url = "/works/orchestral"
+        weight = "1"
+    [[menus.works]]
+        name = "Concertante"
+        url = "/works/concertante"
+        weight = "2"
+    [[menus.works]]
+        name = "Chamber"
+        url = "/works/chamber"
+        weight = "3"
+    [[menus.works]]
+        name = "Vocal"
+        url = "/works/vocal"
+        weight = "4"
+    [[menus.works]]
+        name = "Solo"
+        url = "/works/solo"
+        weight = "5"
+    

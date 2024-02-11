@@ -1,0 +1,122 @@
+/* GENERAL */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-overlay-clr);
+    background-image: url(/media/img/main/home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: multiply;
+    font-size: var(--font-size);
+}
+
+.home-element {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* HOME INTRO */
+
+.home-intro {
+    color: var(--main-clr2);
+    width: 90vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* HOME HEADER */
+
+.home-header {
+    width: 90vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.home-header-title {
+    font-size: var(--mega-size);
+    font-weight: bold;
+    color: var(--main-clr2);
+    line-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-header-description {
+    font-size: var(--font-size);
+    color: var(--main-clr2);
+    margin-top: 4em;
+}
+
+/* HOME NAV */
+
+.home-nav {
+    width: 90vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: left;
+}
+#home-nav-works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    height: min-content;
+    gap: .5em;
+}
+.home-nav-link {
+    color: var(--accent-clr1);
+    font-size: var(--h1-size);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    transition: var(--transition);
+}
+.home-nav-link:hover {
+    background-color: var(--accent-overlay-clr);
+}
+.home-nav-link-content {
+    color: var(--main-clr2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:720px) {
+    .home-nav-link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-nav-link-content {
+        display: none;
+    }
+}
+@media (max-width:500px) {
+    .home-header-title {
+        font-size: 30vw;
+        line-height: 30vw;
+    }
+    .home-header-description, .home-header-description-desc {
+        margin-top: 5vh;
+    }
+}
